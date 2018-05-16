@@ -43,7 +43,7 @@ header {
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .startComment {
@@ -104,8 +104,8 @@ p {
 
 .quizQuestion {
   padding-left: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   font-size: 25px;
 }
 

@@ -97,12 +97,14 @@ function updateScore() {
 
 //generate html for questions & answers
 function renderQuestions(questionNumber) {
-  $(".quizQuestion").html(`${questions[questionNumber].question}`);
-  $("#js-quiz-form").html(`<fieldset><label for="answerChoice" class="filledBackground"><input class="option" type="radio" name="answerChoice" value="${questions[questionNumber].option1}" required>${questions[questionNumber].option1}</label>
+  /*$(".quizQuestion").html(`${questions[questionNumber].question}`);*/
+  $("#js-quiz-form").html(`<fieldset><legend class="quizQuestion">${questions[questionNumber].question}</legend>
+  <label for="answerChoice" class="filledBackground"><input class="option" type="radio" name="answerChoice" value="${questions[questionNumber].option1}" required>${questions[questionNumber].option1}</label>
   <label for="answerChoice"><input class="option" type="radio" name="answerChoice" value="${questions[questionNumber].option2}" required>${questions[questionNumber].option2}</label>
   <label for="answerChoice" class="filledBackground"><input class="option" type="radio" name="answerChoice" value="${questions[questionNumber].option3}" required>${questions[questionNumber].option3}</label>
   <label for="answerChoice"><input class="option" type="radio" name="answerChoice" value="${questions[questionNumber].option4}" required>${questions[questionNumber].option4}</label>
-  <button class="js-submit submitButton" type="submit">Submit</button></fieldset>`);
+  </fieldset>
+  <button class="js-submit submitButton" type="submit">Submit</button>`);
 }
 
 
