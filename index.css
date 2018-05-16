@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive Page Styles */
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  background-color: #910C24;
+  font-family: 'Bitter', serif;
+}
+
+header {
+  text-align: center;
+  color: #e8e8e8;
+  font-size: 40px;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+.startComment {
+  font-size: 25px;
+}
+
+.startContainer {
+  background-color: white;
+  /*width: 500px;*/
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding-top: 65px;
+  text-align: center;
+}
+
+.startButton {
+  width: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  background-color: black;
+  box-shadow: 0 0 5px #000;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: white;
+}
+
+.startButton:hover {
+  cursor: pointer;
+  background-color: #b10808;
+  
+}
+
+.quizInfoContainer {
+  text-align: right;
+  padding: 5px 10px;
+  background-color: #eee;
+}
+
+p {
+  display: inline;
+}
+
+.questionsContainer {
+  /*width: 700px;*/
+  height: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.quizQuestion {
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+label {
+  display: block;
+  padding: 20px 25px;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+input[type=radio] {
+  margin-right: 20px;
+  vertical-align: 2px;
+}
+
+.filledBackground {
+  color: white;
+  background-color: #5a0010;
+}
+
+.submitButton {
+  display: block;
+  width: 150px;
+  margin: 65px auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+  box-shadow: 0 0 5px #000;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: white;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background-color: #b10808;
+}
+
+.feedbackPage {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-bottom: 60px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.nextButton {
+  width: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+  box-shadow: 0 0 5px #000;
+  border-radius: 3px;
+  border: 1px solid black;
+  color: white;
+}
+
+.nextButton:hover {
+  cursor: pointer;
+  background-color: #b10808;
+}
+
+.scoreResults {
+  margin-top: 50px;
+}
+
+.restartButton {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #8a0019;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px black;
+  background-color: #8a0019;
+  color: white;
+  font-size: 18px;
+}
+
+.restartButton:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.resultsComments {
+  font-size: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+i.far.fa-check-circle.fa-3x {
+  margin-bottom: 20px;
+  color: forestgreen;
+}
+
+i.far.fa-times-circle.fa-3x {
+  margin-bottom: 20px;
+  color: darkred;
+}
+
+section {
+  display: none;
+}
+
+.feedbackPage {
+  display: none;
+}
+
+.quizInfoDisplay {
+  display: none;
+}
+
+.hideStartButton {
+  display: none;
+}
+
+/*@media only screen and (min-width: 640px) {
+  
+   .col-12 {
+    width: 100%;
+  }
+    
+}*/
+
+@media only screen and (max-width: 600px) {
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  header {
+    font-size: 2rem;
+  }
+  
+  .startContainer, .questionsContainer, .feedbackPage {
+    margin-top: 50px;
+  }
+  
+  .submitButton {
+    left: auto;
+  }
+  
+  img {
+    width: 300px;
+  }
+  
+}

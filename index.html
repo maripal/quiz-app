@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="content" content="Quiz about The Walking Dead show">
+    <title>The Walking Dead Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Black+Han+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+      <div class="row">
+        <div class="col-12">
+          <h1>The Walking Dead Quiz</h1>
+        </div>
+      </div>
+    </header>
+    
+    <main role="main">
+      <div class="row">
+      <div class="col-12">
+      <div class="startContainer">
+        <h3 class="startComment">Let's see how big of a fan are you...</h3>
+        <button class="startButton">Start</button>
+        </div>
+        </div>
+      </div>
+    </main>
+    
+    <section role="region">
+      <div class="row">
+      <div class="col-12">
+        <div class="questionsContainer">
+          <div class="quizInfoContainer">
+            <p class="quizInfoDisplay"><span class="questionNumber">0</span> out of 10 |</p>  
+            <p class="quizInfoDisplay"> Score: <span class="showScore">0</span></p>
+          </div>
+          <h4 class="quizQuestion"></h4>
+          <form id="js-quiz-form" class="answersForm">
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <div class="row">
+      <div class="col-12">
+        <div class="feedbackPage"></div>
+      </div>
+    </div>
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
